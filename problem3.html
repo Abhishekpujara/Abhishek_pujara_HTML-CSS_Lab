@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Page</title>
+    <style>
+body{
+background-image: url(back.jpg);
+background-repeat: no-repeat;
+}
+
+h3{
+    text-align: center;
+    color: black;
+
+}
+
+form{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: 40%;
+    left: 40%;
+    border: 1px solid white;
+}
+
+
+table{
+    padding: 30px;
+}
+
+input{
+    margin: 5px;
+    padding: 5px;
+    width: 210px;
+    border: none;
+}
+input:focus{
+    outline: none;
+    color: white;
+    background-color:rgba(70,130,80,0.35) ;
+}
+
+button{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-right: 5px;
+}
+button:hover{
+    background-color: plum;
+
+}
+    </style>
+</head>
+<body>
+    <form action="get" id="form" >
+<table>
+
+<tr>
+    <td>
+        <h3>Create Gmail Account</h3>
+    </td>
+</tr>
+<tr>
+    <td>
+        <input type="text" name="username" id="name" placeholder="Enter Your Name">
+    </td>
+</tr>
+<tr>
+    <td>
+        <input type="tel" name="number" id="contact" placeholder="Enter Your Number">
+    </td>
+</tr>
+<tr>
+    <td>
+        <input type="email" name="email" id="email" placeholder="Enter Email id">
+    </td>
+</tr>
+<tr></tr>
+<tr>
+    <td>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </td>
+</tr>
+</table>
+    </form>
+</body>
+</html>

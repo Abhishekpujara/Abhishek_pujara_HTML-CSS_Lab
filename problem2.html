@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bar Animation</title>
+    <style>
+        .section {
+            background-color: rgb(232 230 228);
+            top: 10%;
+            left: 40%;
+            display: inline-block;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .section article {
+            display: inline-block;
+        }
+
+        p {
+            padding-left: 20px;
+        }
+
+        div {
+            width: 40px;
+            height: 300px;
+            margin: 20px;
+            background-color: lightslategray;
+        }
+
+        #bar1 {
+            background-color: white;
+            width: 100%;
+            height: 70%;
+            animation-name: bar1animation;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes bar1animation {
+            0% {
+                height: 100%;
+                background-color: white;
+            }
+
+            100% {
+                height: 70%;
+                background-color: white;
+            }
+        }
+
+        #bar2 {
+            background-color: white;
+            width: 100%;
+            height: 60%;
+            animation-name: bar2animation;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes bar2animation {
+            0% {
+                height: 100%;
+                background-color: white;
+            }
+
+            100% {
+                height: 60%;
+                background-color: white;
+            }
+        }
+
+        #bar3 {
+            background-color: white;
+            width: 100%;
+            height: 20%;
+            animation-name: bar3animation;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes bar3animation {
+            0% {
+                height: 100%;
+                background-color: white;
+            }
+
+            100% {
+                height: 20%;
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section">
+        <article>
+            <div>
+                <article id="bar1"></article>
+            </div>
+            <p>30%</p>
+        </article>
+        <article>
+            <div>
+                <article id="bar2"></article>
+            </div>
+            <p>40%</p>
+        </article>
+
+        <article>
+            <div>
+                <article id="bar3"></article>
+            </div>
+            <p>80%</p>
+        </article>
+        <h1>Bar Plot</h1>
+    </section>
+</body>
+
+</html>

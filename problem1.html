@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Navbar demo</title>
+    <style>
+      body {
+        margin: 0%;
+      }
+
+      header h1 {
+        background-color: red;
+        text-align: right;
+        margin: 0px;
+        padding: 20px;
+      }
+
+      .navbar {
+        position: sticky;
+        top: 0%;
+        z-index: 1;
+      }
+
+      .menu {
+        margin: 0px;
+        background-color: grey;
+      }
+
+      .menu li {
+        padding: 10px;
+        display: inline-block;
+      }
+
+      .menu li a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+      .menu li:hover {
+        background-color: black;
+      }
+
+      #Dropdown-1,
+      #Dropdown-2 {
+        position: absolute;
+        width: auto;
+        max-width: 140px;
+        display: none;
+        padding: 0px;
+        background-color: whitesmoke;
+        top: 42px;
+      }
+
+      .menu :nth-child(2):hover #Dropdown-1,
+      .menu :nth-child(3):hover #Dropdown-2 {
+        display: block;
+      }
+
+      #Dropdown-1 li,
+      #Dropdown-2 li {
+        display: block;
+      }
+
+      #Dropdown-1 li:hover,
+      #Dropdown-2 li:hover {
+        background-color: rgb(187, 182, 182);
+      }
+
+      #Dropdown-1 li a,
+      #Dropdown-2 li a {
+        color: rgb(38, 38, 140);
+      }
+    </style>
+    
+  </head>
+  <body>
+    <header>
+      <h1>Demo of Dropdown</h1>
+    </header>
+    <nav class="navbar">
+      <ul class="menu">
+        <li><a>Link 1</a></li>
+        <li>
+          <a>Link 2</a>
+          <ul id="Dropdown-1">
+            <li><a> DD_link_1</a></li>
+            <li><a> DD_link_1</a></li>
+            <li><a> DD_link_1</a></li>
+          </ul>
+        </li>
+        <li>
+          <a>Link 3</a>
+          <ul id="Dropdown-2">
+            <li><a> DD_link_1</a></li>
+            <li><a> DD_link_1</a></li>
+            <li><a> DD_link_1</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
